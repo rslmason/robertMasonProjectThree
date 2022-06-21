@@ -24,7 +24,7 @@ body {
   max-width: 1000px;
   width: 90%;
   margin: auto;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 
 .fleets .ship {
@@ -94,7 +94,7 @@ li {
   user-select: none;
   border: solid aliceblue 2px;
   padding: 10px;
-  height: 500px;
+  height: 30rem;
 
 }
 
