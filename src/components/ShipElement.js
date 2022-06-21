@@ -3,7 +3,7 @@ export default ShipElement
 function ShipElement (props) {
     return <div className={"ship " + props.shipGroup.className}
             onMouseDown={ (event) => {
-                if (event.ctrlKey){
+                if (event.ctrlKey || event.metaKey){
                     props.moving.current = props.shipGroup.pull(Math.ceil(props.shipGroup.number/2));
                 }
                 else if (event.shiftKey){

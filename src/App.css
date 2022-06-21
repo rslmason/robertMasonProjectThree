@@ -4,7 +4,11 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@font-face {
+  font-family: "Handel Gothic D Bold";
+  src: url("./fonts/Handel\ Gothic\ D\ Bold.otf");
+}
 
 html {
   font-size: 62.5%;
@@ -13,12 +17,14 @@ html {
 body {
   background-color: #0e4a92;
   color:aliceblue;
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Handel Gothic D Bold', sans-serif;
+  
 }
 #root {
   max-width: 1000px;
   width: 90%;
   margin: auto;
+  margin-bottom: 10rem;
 }
 
 .fleets .ship {
@@ -68,11 +74,11 @@ li {
 
 h1 {
   font-size: 3.2rem;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
 } 
 h2 {
   font-size: 3rem;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
 }
 
 p {
@@ -96,7 +102,7 @@ p {
   text-align: right;
   width: 5rem;
   font-size: 2rem;
-  font-family: 'Kdam Thmor Pro', sans-serif;;
+  font-family: 'Handel Gothic D Bold', sans-serif;;
 }
 
 button {
@@ -107,7 +113,7 @@ button {
   margin: auto;
   font-size: 3.4rem;
   /* width: 50px; */
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Handel Gothic D Bold', sans-serif;
 }
 
 .instructions {
@@ -130,5 +136,5 @@ button {
   display: inline;
   margin: 2rem;
   font-size: 2.4rem;
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Handel Gothic D Bold', sans-serif;
 }
