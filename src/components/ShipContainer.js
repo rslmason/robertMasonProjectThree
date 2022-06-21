@@ -26,7 +26,8 @@ function ShipContainer (props) {
                     .map(function(val, index, array) 
                         {let percentage = val/total * 100;
                             if (percentage !== 100) {
-                                return index + 1 + ": " + percentage.toFixed(1) + "% "
+                                return (array.length - index) + ": " + percentage.toFixed(1) + "% "
+                                // return (index + 1) + ": " + percentage.toFixed(1) + "% "
                             }
                             else {
                                 if (!shown100) {
@@ -35,7 +36,8 @@ function ShipContainer (props) {
                                         return `${array.length}: ${percentage.toFixed(1)}%`
                                     }
                                     else {
-                                        return index + 1 + ": " + percentage.toFixed(1) + "% "
+                                        return (array.length - index) + ": " + percentage.toFixed(1) + "% "
+                                        // return index + 1 + ": " + percentage.toFixed(1) + "% "
                                     }
                                 }
                                 else {
