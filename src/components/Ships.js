@@ -103,9 +103,10 @@ Cruiser.prototype = cruiserPrototype
 let warSunPrototype = Object.assign(Object.create(shipPrototype), {
     type: 'war sun',
     battleValue: 3,
+    battleShots: 3,
     battle: function () {
         let hits = 0
-        for (let i = 0; i<3;i++) {
+        for (let i = 0; i<this.battleShots;i++) {
             hits += this.rollDie() >= this.battleValue
         }
         return hits

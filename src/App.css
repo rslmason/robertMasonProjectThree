@@ -99,10 +99,12 @@ p {
   background: steelblue;
   border: solid aliceblue 2px;
   color:aliceblue;
-  text-align: right;
-  width: 5rem;
+  text-align: center;
+  width: 7rem;
   font-size: 2rem;
-  font-family: 'Handel Gothic D Bold', sans-serif;;
+  font-family: 'Handel Gothic D Bold', sans-serif;
+  /* padding-left: .5rem; */
+
 }
 
 button {

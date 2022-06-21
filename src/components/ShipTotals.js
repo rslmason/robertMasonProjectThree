@@ -9,7 +9,7 @@ function ShipTotals (props) {
         {Ships.map(shipType=>{ 
             return <div key={props.fleet.number+shipType+"Label"}>
                 <label htmlFor={shipType.prototype.type + props.fleet.number} >
-                    {shipType.prototype.type}
+                    {shipType.prototype.type} <br/>{`[b: ${shipType.prototype.battleShots ? `${shipType.prototype.battleShots}x${shipType.prototype.battleValue}`: shipType.prototype.battleValue}${shipType.prototype.afbShots? `, afb ${shipType.prototype.afbShots}x${shipType.prototype.afbValue}`: ""}${shipType.prototype.sustain? ", sustain damage": ""}]`}
                 </label>
                 <input id={shipType.prototype.type + props.fleet.number} type="number" key={props.fleet.number+shipType} onChange={(e)=>{
                     if (e.target.value < 0) {
