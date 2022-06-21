@@ -33,6 +33,7 @@ body {
   height: 5rem;
   padding: 1rem;
   border: solid aliceblue 2px;
+  background-color: #0e4a92;
   /* overflow: hidden; */
   /* text-overflow: ellipsis; */
 }
@@ -95,7 +96,7 @@ li {
   border: solid aliceblue 2px;
   padding: 10px;
   min-height: 30rem;
-
+  background-color: steelblue;
 }
 
 h1 {
