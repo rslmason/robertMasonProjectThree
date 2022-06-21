@@ -41,7 +41,12 @@ function ShipElement (props) {
                 
             }}
         >
-            {props.shipGroup.number} {props.shipGroup.type + (props.shipGroup.number > 1 ? "s" : "")} {props.shipGroup.mergeCount ? `(${props.shipGroup.number - props.shipGroup.mergeCount} + ${props.shipGroup.mergeCount})` : ""}<span>{props.rates}</span>
+            <p>
+                {props.shipGroup.number} {props.shipGroup.type + (props.shipGroup.number > 1 ? "s" : "")} {props.shipGroup.mergeCount ? `(${props.shipGroup.number - props.shipGroup.mergeCount} + ${props.shipGroup.mergeCount})` : ""}
+            </p>
+            <p>
+                <span>{props.rates}</span>
+            </p>
             {/* <button onClick = {()=>{
                 props.shipGroup.number += 1;
                 props.fleet.updateState()

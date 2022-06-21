@@ -18,19 +18,33 @@ function ShipContainer (props) {
             propsSurvivalClone[key] = props.survival[key].slice()
         }
         for (let i = props.fleet.shipGroups.length -1; i >=0; i--) {
+            let shown100 = false;
             if (propsSurvivalClone[props.fleet.shipGroups[i].type]) {
                 survivalRates[i] = propsSurvivalClone[props.fleet.shipGroups[i].type]
                     .splice(0,props.fleet.shipGroups[i].number)
-                    .map(function(val, index) 
+                    .reverse() 
+                    .map(function(val, index, array) 
                         {let percentage = val/total * 100;
                             if (percentage !== 100) {
                                 return index + 1 + ": " + percentage.toFixed(1) + "% "
                             }
                             else {
-                                return ""
+                                if (!shown100) {
+                                    shown100 = true
+                                    if (index === 0) {
+                                        return `${array.length}: ${percentage.toFixed(1)}%`
+                                    }
+                                    else {
+                                        return index + 1 + ": " + percentage.toFixed(1) + "% "
+                                    }
+                                }
+                                else {
+                                    return ""       
+                                }
                             }
                         }
                     )
+                    .reverse()
             }
             else {
                 survivalRates[i] = '0%'
