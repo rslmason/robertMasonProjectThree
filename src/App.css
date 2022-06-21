@@ -94,7 +94,7 @@ li {
   user-select: none;
   border: solid aliceblue 2px;
   padding: 10px;
-  height: 30rem;
+  min-height: 30rem;
 
 }
 
