@@ -1,4 +1,3 @@
-// import { Destroyer, Fighter } from './Ships.js'
 import React from 'react';
 import { Ships } from './Ships.js'
 export default ShipTotals

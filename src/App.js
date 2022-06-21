@@ -10,11 +10,9 @@ import FleetObj from './components/FleetObj';
 
 function App() {
 	
-	
 	const [fleetOne, fleetOneUpdate] = useState(new FleetObj(()=>{}, "DummyOne"))
 	const [fleetTwo, fleetTwoUpdate] = useState(new FleetObj(()=>{}, "DummyTwo"))
 	
-	// I assume there are better ways to do this with hooks.
 	let firstRender = useRef(true)
 	if (firstRender.current === true) {
 		fleetOneUpdate({...new FleetObj(fleetOneUpdate, "One")})
@@ -80,8 +78,6 @@ function App() {
 			}/>
 			
 			<button onClick={()=>{
-
-				// this works. 
 				let resultsArray = [0,0,0];
 
 				let bcOneSurvivalArrays = {

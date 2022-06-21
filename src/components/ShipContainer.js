@@ -49,9 +49,6 @@ function ShipContainer (props) {
             else {
                 survivalRates[i] = '0%'
             }
-        
-        
-        // survivalRates[i] = propsSurvivalClone?.[props.fleet.shipGroups[i].type]?.splice(0,props.fleet.shipGroups[i].number).map(function(val, index) {return index+1 + ": " + (val/total*100).toFixed(1) + "% "}) || "specialString"
         }
     }
     else {
@@ -60,23 +57,7 @@ function ShipContainer (props) {
         }
     }
 
-    
-    // for (let i = props.fleet.shipGroups.length -1; i >=0; i--) {
-        
-    //         if (propsSurvivalClone[props.fleet.shipGroups[i].type]) {
-    //             survivalRates[i] = propsSurvivalClone[props.fleet.shipGroups[i].type].splice(0,props.fleet.shipGroups[i].number).map(function(val, index) {return index+1 + ": " + (val/total*100).toFixed(1) + "% "})
-    //         }
-    //         else {
-    //             survivalRates[i] = 's0%'
-    //         }
-        
-        
-    //     // survivalRates[i] = propsSurvivalClone?.[props.fleet.shipGroups[i].type]?.splice(0,props.fleet.shipGroups[i].number).map(function(val, index) {return index+1 + ": " + (val/total*100).toFixed(1) + "% "}) || "specialString"
-    // }
-
-    return <>
-        
-        <div className="shipContainer">
+    return <div className="shipContainer">
             {props.fleet.shipGroups.map(function (shipGroup, index) {
                 return <ShipElement 
                     key = {index}
@@ -88,6 +69,4 @@ function ShipContainer (props) {
                 />
             })}
         </div>
-
-    </>
 }

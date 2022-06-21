@@ -1,4 +1,3 @@
-// export default Fighter;
 exports.Ships = [Fighter,Destroyer,Cruiser,Dreadnought,WarSun,Carrier]
 
 const shipPrototype = {
@@ -15,7 +14,6 @@ const shipPrototype = {
 
     takeHit: function () {
         if (this.sustain) {
-            // this.sustain = false
             return 'destroyed'
         }
         else {
@@ -29,10 +27,6 @@ const shipPrototype = {
             battle: function () {return 0},
             antiFighterBarrage: function () {return 0},
             takeHit: function () {
-                // ask the fleet to take a hit of this type?
-                // splice self out of array?
-                // the former is preferable, since that allows us to restore sustain
-                // after a round of combat, etc.
                 return 'destroyed'
             }
         }

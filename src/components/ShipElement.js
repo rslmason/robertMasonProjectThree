@@ -47,9 +47,5 @@ function ShipElement (props) {
             <p>
                 <span>{props.rates}</span>
             </p>
-            {/* <button onClick = {()=>{
-                props.shipGroup.number += 1;
-                props.fleet.updateState()
-            }}>+</button> */}
         </div>
 }
