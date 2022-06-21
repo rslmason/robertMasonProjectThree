@@ -68,6 +68,7 @@ function App() {
 
 
 	return <>
+		<h1>Twilight Imperium 4 Battle Simulator</h1>
 		<Instructions/>
 		<div className="fleets">
 			<Fleet fleet={fleetOne} survival={results[survivalOne]?.[greaterFleetKey]?.[lesserFleetKey]} results={results['winsLosses']?.[greaterFleetKey]?.[lesserFleetKey]}/> 

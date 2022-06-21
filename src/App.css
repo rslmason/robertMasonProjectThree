@@ -66,8 +66,13 @@ li {
 
 }
 
+h1 {
+  font-size: 3.2rem;
+  letter-spacing: .2rem;
+} 
 h2 {
   font-size: 3rem;
+  letter-spacing: .2rem;
 }
 
 p {
@@ -91,6 +96,7 @@ p {
   text-align: right;
   width: 5rem;
   font-size: 2rem;
+  font-family: 'Kdam Thmor Pro', sans-serif;;
 }
 
 button {
@@ -101,6 +107,7 @@ button {
   margin: auto;
   font-size: 3.4rem;
   /* width: 50px; */
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .instructions {
@@ -122,5 +129,6 @@ button {
 .lower ul li {
   display: inline;
   margin: 2rem;
-  font-size: 2.4rem
+  font-size: 2.4rem;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
