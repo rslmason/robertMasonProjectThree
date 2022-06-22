@@ -94,7 +94,7 @@ function App() {
 						bcOne.assignHits(bcTwo.battle());
 						bcTwo.assignHits(tempHits);
 					}
-					if (!bcOne.shipStack.length && !bcOne.shipStack.length) {
+					if (!bcOne.shipStack.length && !bcTwo.shipStack.length) {
 						resultsArray[2]++
 					}
 					else if (bcOne.shipStack.length) {
