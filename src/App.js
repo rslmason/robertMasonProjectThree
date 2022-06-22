@@ -94,7 +94,10 @@ function App() {
 						bcOne.assignHits(bcTwo.battle());
 						bcTwo.assignHits(tempHits);
 					}
-					if (bcOne.shipStack.length) {
+					if (!bcOne.shipStack.length && !bcOne.shipStack.length) {
+						resultsArray[2]++
+					}
+					else if (bcOne.shipStack.length) {
 						resultsArray[bcOneIndex]++
 						
 						let shipCounters = {
@@ -161,9 +164,6 @@ function App() {
 							}
 							shipCounters[bcTwo.shipStack[i].type]++
 						}
-					}
-					else {
-						resultsArray[2]++
 					}
 				}
 
